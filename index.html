@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+    <title>Ocean Clean Ops</title>
     <script src="https://cdn.tailwind.css.com"></script>
   </head>
   <body>
-    <header>
-      <h1>Ocean Clean Ops</h1>
-      <nav>    
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Donate</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Gallery</a></li>
-        </ul>
-    </nav>
+    <header class = "header bg-gray-900 text-white py-10" role="contentinfo">
+      <div class = "header_inner container mx-auto px-6 grid grid-cols-3 items-center">
+        <h1 class ="text-x1 font-bold">Ocean Clean Ops</h1>
+        <nav>    
+          <ul class="flex space-x-4 justify-center text-x1">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#services">Services</a></li> 
+              <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </nav>
+        <button type ="submit" class = "donate justify-self-end bg-blue-500 p-4 rounded-md hover:bg-blue-600 transition duration-200">
+            <h4>PLEDGE YOUR SUPPORT</h4>
+          </button>
+      </div>
+
     </header>
     <main>
-        <div class = "services">
+        <div class = "services" id = "services">
           <h2>Services</h2>
           <h3>Beach Cleanup</h3>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Lacus velit sagittis tincidunt libero fringilla magna. Nostra venenatis tortor per nec arcu.</p>
@@ -36,7 +41,7 @@
             <img src="https://picsum.photos/200/300?random=4">
           </div>
         
-        <div class = "gallery">
+        <div class = "gallery" id = "gallery">
           <h2>Gallery</h2>
           <img src="https://picsum.photos/200/300?random=5">
           <img src="https://picsum.photos/200/300?random=6">
