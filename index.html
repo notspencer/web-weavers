@@ -49,16 +49,45 @@
           <img src="https://picsum.photos/200/300?random=11">
           <img src="https://picsum.photos/200/300?random=12">
         </div>
+        <!-- Donate Button -->
         <br>
-        <div class="flex justify-center">
-          <button class="bg-blue-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 active:bg-blue-700 transition duration-300 ease-in-out">
-            Donate
-          </button>
-          <div class="w-full">
-            <h2 class="text-center">
-              Support the Ocean Clean Project with your donation. Your contribution makes our work easier and more effective.
-            </h2>
+        <section>
+          <div class="text-center">
+            <!-- Button Centered Above Paragraph -->
+            <button class="mb-4 py-2 px-6 bg-blue-600 text-white rounded hover:bg-blue-700">
+              Donate
+            </button>
+            <p class="text-lg text-gray-700">Support the Ocean Clean Project with your donation. Your contribution makes our work easier and more effective.</p>
           </div>
+      </section>
+        <br>
+        <!-- Request Form -->
+        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+          <h2 class="text-2xl font-bold text-center mb-4">Request Form for Volunteers</h2>
+          <form action="#" method="POST" class="space-y-4">
+            <!-- Name field -->
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+              <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" required>
+            </div>
+      
+            <!-- Email field -->
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+              <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" required>
+            </div>
+      
+            <!-- Message field -->
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+              <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" required></textarea>
+            </div>
+      
+            <!-- Submit button -->
+            <div>
+              <button type="submit" class="w-full py-2 px-4 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Submit Request</button>
+            </div>
+          </form>
         </div>
     </main>
     <section class="flex justify-center items-center py-10"> 
